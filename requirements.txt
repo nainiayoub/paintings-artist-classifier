@@ -1,5 +1,5 @@
 uvicorn==0.18.2
-opencv-python
+opencv-python-headless
 imageio
 numpy
 fastapi==0.79.0
