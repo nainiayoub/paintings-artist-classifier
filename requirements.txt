@@ -1,9 +1,8 @@
 uvicorn==0.18.2
 opencv-python
-tensorflow_gpu
 imageio
 numpy
 fastapi==0.79.0
 Pillow==9.2.0
-tensorflow
+tensorflow-cpu
 requests
