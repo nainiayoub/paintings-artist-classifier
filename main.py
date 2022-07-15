@@ -44,9 +44,9 @@ def get_image(url: str):
     return {"name": labels[prediction_idx]}
 
 
-# if __name__ == "__main__":
-#     port = int(os.environ.get('PORT', 5000))
-#     uvicorn.run(app, host="0.0.0.0", port=port)
+if __name__ == "__main__":
+    port = int(os.environ.get('PORT', 5000))
+    uvicorn.run("main:app", host="0.0.0.0", port=port)
     # ngrok_tunnel = ngrok.connect(8000)
     # print('Public URL:', ngrok_tunnel.public_url)
     # nest_asyncio.apply()
