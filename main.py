@@ -11,12 +11,12 @@ import os
 
 app = FastAPI()
 
-# urll = 'https://github.com/nainiayoub/paintings-artist-classifier/releases/download/v1.0.0/artists_classifier.h5'
-# filename_model = urll.split('/')[-1]
-# urllib.request.urlretrieve(urll, filename_model)
+urll = 'https://github.com/nainiayoub/paintings-artist-classifier/releases/download/v1.0.0/artists_classifier.h5'
+filename_model = urll.split('/')[-1]
+urllib.request.urlretrieve(urll, filename_model)
 
-# model_file = filename_model
-model_file = './models/artists_classifier.h5'
+model_file = filename_model
+# model_file = './models/artists_classifier.h5'
 
 
 @app.post("/predict-artist/")
