@@ -7,3 +7,4 @@ Pillow==9.2.0
 tensorflow-cpu
 requests
 gunicorn
+os
