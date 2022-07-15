@@ -1,6 +1,6 @@
 uvicorn==0.18.2
 opencv-python
-tensorflow_gpu==2.7.0
+tensorflow_gpu
 imageio==2.9.0
 numpy==1.19.5
 fastapi==0.79.0
