@@ -6,10 +6,16 @@ from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing.image import img_to_array
 import imageio
 import cv2
+import urllib.request
 
 app = FastAPI()
 
-model_file = './models/artists_classifier.h5'
+urll = 'https://github.com/nainiayoub/paintings-artist-classifier/releases/download/v1.0.0/artists_classifier.h5'
+filename_model = urll.split('/')[-1]
+urllib.request.urlretrieve(urll, filename_model)
+
+model_file = filename_model
+# model_file = './models/artists_classifier.h5'
 
 
 @app.post("/predict-artist/")
