@@ -1,10 +1,8 @@
-uvicorn==0.18.2
-opencv-python-headless
+tensorflow_cpu
 imageio
+opencv-python-headless
+uvicorn==0.18.2
 numpy
 fastapi==0.79.0
 Pillow==9.2.0
-tensorflow-cpu
-requests
 gunicorn
-
